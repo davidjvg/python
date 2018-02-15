@@ -1,4 +1,5 @@
 def imprimir():
 	print 'programa que imprime'
 	
-imprimir()
+def funcion():
+        return 'holaaa'
