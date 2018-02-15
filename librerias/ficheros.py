@@ -19,11 +19,17 @@ def entorno():
 			print "%s: %s" % (variable, valor)
 
 #funcion que recupera los ficheros que ocupan ms de
-#os.getsize
 #os.listdir
-def gordos(dir,size):
-	for x in os.listdir(dir):
+def gordos(path,size,tipo):
+	for x in os.listdir(path):
 		tamano=os.path.getsize(x)
-		if tamano > (size):
+		if tamano > int(size):
 			print x
-				
+#sigue..
+			
+def visualizar(path):
+	archivo=open(path,'a')
+	while True:
+		linea =	f.readline()
+                if not linea: break
+		print line
