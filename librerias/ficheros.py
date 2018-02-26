@@ -33,3 +33,15 @@ def visualizar(path):
 		linea =	f.readline()
                 if not linea: break
 		print line
+
+def cp(f1,f2):
+	if not os.access(f1,0):
+		print "el fichero existe"
+		exit()
+	f1=open(fichero1,'r')
+	f2=open(fichero2,'w')	
+	lineas=f1.readlines()
+
+	lineas=f1.readlines()
+
+		
